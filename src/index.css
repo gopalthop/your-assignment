@@ -1,0 +1,47 @@
+/* src/index.css */
+:root {
+  --primary-color: #6C38FF;     /* The main purple brand color */
+  --primary-light: #D1C4E9;    /* Light purple for secondary button */
+  --text-dark: #1D2226;
+  --text-muted: #7D8895;
+  --bg-light: #F8F9FA;
+  --border-color: #CCE0FF;      /* Light blue/grey borders for inputs */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: #E5E5E5; /* Light grey desktop background to contrast the phone view */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* The magic frame that centers your app like a mobile phone view */
+.app-container {
+  width: 100%;
+  max-width: 412px; /* Standard mobile width */
+  height: 100vh;
+  max-height: 892px; /* Standard mobile height */
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Smooth custom scrollbar for the mobile preview */
+.app-container::-webkit-scrollbar {
+  width: 4px;
+}
+.app-container::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border-radius: 4px;
+}

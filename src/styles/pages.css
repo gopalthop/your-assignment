@@ -1,0 +1,269 @@
+/* src/styles/pages.css */
+
+/* Layout structures */
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  background-color: var(--bg-light);
+}
+
+.welcome-container {
+  padding: 40px 20px;
+  justify-content: flex-end; /* Pushes content down towards bottom as shown in mockup */
+  gap: 40px;
+}
+
+.standard-padding {
+  padding: 40px 20px;
+  justify-content: flex-start;
+}
+
+/* Typography */
+.heading-main {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Form Styles */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 10px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 14px;
+  color: var(--text-dark);
+  outline: none;
+  background-color: #FFFFFF;
+}
+
+.custom-input:focus {
+  border-color: var(--primary-color);
+}
+
+/* Floating-style label background offset */
+.input-label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background-color: #FFFFFF;
+  padding: 0 6px;
+  font-size: 13px;
+  color: var(--primary-color);
+  font-weight: 500;
+  z-index: 1;
+}
+
+/* Button UI Components */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn {
+  width: 100%;
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+}
+
+.btn-secondary {
+  background-color: #CBC3E3; /* Light tint match from wireframe */
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.btn-disabled {
+  background-color: #CBCBCB; /* Greyed out look from the login template mockup */
+  color: #FFFFFF;
+}
+
+/* Additional configurations to add directly to src/styles/pages.css */
+
+.required-star {
+  color: #FF4D4D;
+  margin-left: 3px;
+}
+
+/* Radio Element Mechanics overrides custom designs */
+.radio-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 5px;
+}
+
+.radio-title {
+  font-size: 15px;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.radio-group {
+  display: flex;
+  gap: 24px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  color: var(--text-dark);
+  cursor: pointer;
+  position: relative;
+}
+
+/* Custom CSS Radio Button matching the mockup appearance */
+.radio-label input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom-radio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #CBCBCB;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.radio-label input[type="radio"]:checked ~ .custom-radio {
+  border-color: var(--primary-color);
+}
+
+.radio-label input[type="radio"]:checked ~ .custom-radio::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+/* Account Settings Screen Module Styles */
+.settings-header {
+  padding: 20px;
+  border-bottom: 1px solid #EBEBEB;
+  background-color: #FFFFFF;
+}
+
+.settings-header h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.profile-section {
+  padding: 30px 20px;
+  background-color: #F8F9FA;
+  flex-grow: 1;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.camera-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--primary-color);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #FFFFFF;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.profile-email {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.profile-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #7D8895;
+}
+
+.dashed-divider {
+  border-top: 1px dashed #CBCBCB;
+  width: 100%;
+  margin-top: auto;
+  height: 200px; /* Placeholder spacing mimicking mockup empty base footer look */
+  background-color: #FFFFFF;
+}
