@@ -1,16 +1,34 @@
-# React + Vite
+# PopX Frontend Qualifier Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A pixel-perfect, highly responsive mobile web interface built using **React JS** and **Vite**. This application functions seamlessly as a centralized mobile layout centered on desktop viewports, simulating a real-world smartphone application ecosystem.
 
-Currently, two official plugins are available:
+## 🔗 Live Project Links
+* **Live Deployment Link:** [https://your-assignment.vercel.app/](https://your-assignment.vercel.app/)
+* **Design Mockup Reference:** [Adobe XD Link](https://xd.adobe.com/view/b68eea25-003d-4a5d-8fdd-d463eeb20b32-e3dd)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📱 Features Implemented
+* **Centralized Mobile Layout:** Constrained viewport bounds (`max-width: 412px`) built directly into standard CSS to isolate and beautifully center the application interface on wider screens.
+* **Seamless Client-Side Routing:** Powered by `react-router-dom` to transitions between all 4 required states fluidly with zero browser refreshes.
+* **Component Architecture:** Separated viewports into isolated, single-responsibility components (`Welcome`, `Login`, `Register`, `AccountSettings`) for clean, enterprise-ready code readability.
+* **Dynamic UX Form Fixes:** Replaced the layout wireframe template placeholders (where every field read "Marry Doe") with semantic field types (`email`, `tel`, `password`) and appropriate dynamic input logic.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack & Dependencies
+* **Core:** React 18+ & JavaScript (ES6+)
+* **Build System:** Vite (Optimized production asset compilation)
+* **Routing:** React Router DOM v6
+* **Styling:** Vanilla CSS3 featuring custom properties (CSS Variables) for unified brand coloring
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Getting Started Locally
+
+Follow these instructions to download, build, and run this project in your local development environment.
+
+### 1. Clone the repository
+```bash
+git clone [https://github.com/gopalthop/your-assignment.git](https://github.com/gopalthop/your-assignment.git)
+cd your-assignment
