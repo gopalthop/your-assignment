@@ -32,3 +32,34 @@ Follow these instructions to download, build, and run this project in your local
 ```bash
 git clone [https://github.com/gopalthop/your-assignment.git](https://github.com/gopalthop/your-assignment.git)
 cd your-assignment
+2. Install Dependencies
+Bash
+npm install
+3. Run Development Server
+Bash
+npm run dev
+Once initialized, open your browser and head to http://localhost:5173/ to view the running app.
+
+📁 Folder Structure Overview
+Plaintext
+src/
+├── components/     # Reusable UI building blocks
+├── pages/          # Individual screen view containers
+│   ├── Welcome.jsx
+│   ├── Login.jsx
+│   ├── Register.jsx
+│   └── AccountSettings.jsx
+├── styles/         # Global resets and unified typography layouts
+│   └── pages.css
+├── App.jsx         # Router switch mapping core paths
+└── main.jsx        # App mounting configuration boilerplate
+
+---
+
+### What to do now:
+1. Save this into your `README.md` file.
+2. Commit and push it to GitHub using these final console commands:
+   ```bash
+   git add README.md
+   git commit -m "docs: implement professional and detailed repository documentation"
+   git push
